@@ -55,11 +55,11 @@ public class Quizz {
 	}
 	
 	public static String secondAnswer2 () {
-		return "Gryffindor House";
+		return "Ravenclaw house";
 	}
 	
 	public static String secondAnswer3 () {
-		return "Ravenclaw house";
+		return "Gryffindor House";
 	}
 	
 	public static String secondAnswer4 () {

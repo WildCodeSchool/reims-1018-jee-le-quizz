@@ -43,7 +43,7 @@ public class QuestionServlet extends HttpServlet {
 	       getServletContext().getRequestDispatcher("/WEB-INF/question.jsp")
 	        .forward(request,response);*/
 	    
-	    URL url = new URL("https://my-json-server.typicode.com/l-alexis/JsonFileProject2/db");
+	   /* URL url = new URL("https://my-json-server.typicode.com/l-alexis/JsonFileProject2/db");
 		HttpURLConnection connect = (HttpURLConnection) url.openConnection();
 		connect.setRequestMethod("GET");
 		int status = connect.getResponseCode();
@@ -81,7 +81,7 @@ public class QuestionServlet extends HttpServlet {
 	        }
 	      Question question= new Question (idQuestion, realQuestion, answers);
 	      this.questionsTable.add(question);
-
+*/
 	    
 	    
 	    
