@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="Quizz-Qui-veux-gagner-des-gallions">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <property name="context-root" value="Quizz-Qui-veux-gagner-des-gallions"/>
+        <property name="java-output-path" value="/Quizz-Qui-veux-gagner-des-gallions/build/classes"/>
+    </wb-module>
+</project-modules>
