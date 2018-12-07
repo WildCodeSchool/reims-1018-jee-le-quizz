@@ -37,7 +37,7 @@ public class ThirdQuestion extends HttpServlet {
 		request.setAttribute( "answer2", answerThird2 );
 		request.setAttribute( "answer3", answerThird3 );
 		request.setAttribute( "answer4", answerThird4 );
-	       getServletContext().getRequestDispatcher("/WEB-INF/question.jsp")
+	       getServletContext().getRequestDispatcher("/WEB-INF/Question3.jsp")
 	        .forward(request,response);
 	}
 
