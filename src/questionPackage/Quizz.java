@@ -15,17 +15,13 @@ import org.json.simple.JSONObject;
 
 public class Quizz {
 	
-	//private static ArrayList <Question> questionsTable ;
 	
 
 	public static String Hello () {
 		return "Qui veut gagner des Gallions ?";
 	}
 	
-	/*public static void test () {
-		System.out.println("le parse a réussi!");
-	}
-	*/
+
 	public static String firstQuestion () {
 		return "Which sport does the young Harry Potter practice while studying at Hogwarts?";
 	}
@@ -105,58 +101,8 @@ public class Quizz {
 	public static String fourthAnswer4 () {
 		return "Voleti Voleta";
 	}
-	/*
 	
-	public Quizz () throws IOException {
-		 
-		ArrayList <Question> questionsTable ;
-	
-		URL url = new URL("https://my-json-server.typicode.com/l-alexis/JsonFileProject2/db");
-		HttpURLConnection connect = (HttpURLConnection) url.openConnection();
-		connect.setRequestMethod("GET");
-		int status = connect.getResponseCode();
-		BufferedReader in = new BufferedReader(
-				  new InputStreamReader(connect.getInputStream()));
-		String inputLine;
-		StringBuffer content = new StringBuffer();
-		while ((inputLine = in.readLine()) != null) {
-		    content.append(inputLine);
-		}
-		in.close();
-		connect.disconnect();
-		//response.getWriter().append(content);
-		FileReader jsonFile = null;
-		jsonFile = new FileReader(content.toString());
-		JSONParser parser = new JSONParser(jsonFile);
-	    Object jsonParsed = null;
-	    try {
-	      jsonParsed = parser.parse();
-	    } catch (ParseException e) {
-	      e.printStackTrace();
-	    }
-	    
-	    JSONArray root = (JSONArray) jsonParsed;
-	    //Quizz.questionsTable = new ArrayList <Question>();
-	    for (int i=0;i<root.size();i++){
-	      List<String> answers = new ArrayList<String>();
-	      JSONObject questionObject = (JSONObject)root.get(i);
-	      String realQuestion = (String) questionObject.get("content");
-	      int idQuestion= Math.toIntExact ( (long) questionObject.get("id") );
-	      JSONArray answersQuestion = (JSONArray) questionObject.get("answers1");
-	      for (int j = 0; j < answersQuestion.size(); j++) {
-	          String answer = (String) answersQuestion.get(j);
-	          answers.add(answer);
-	      }
-	      Question question= new Question (idQuestion, realQuestion, answers);
-	      Quizz.questionsTable.add(question);
-       }
-	    
+	public static String youLoose () {
+		return "Oh noooo, You loose ! Go back with the muggles!";
 	}
-	
-	  public Question getFirstQuestion (){
-//	    return null;
-	    return Quizz.questionsTable.get(0);
-	  }
-	*/
-	
 }

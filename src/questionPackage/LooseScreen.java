@@ -8,16 +8,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class SecondQuestion
+ * Servlet implementation class LooseScreen
  */
-@WebServlet("/Question2")
-public class SecondQuestion extends HttpServlet {
+@WebServlet("/GameOver")
+public class LooseScreen extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public SecondQuestion() {
+    public LooseScreen() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -27,19 +27,10 @@ public class SecondQuestion extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		String teste = Quizz.secondQuestion();
-		String answerTwo1 = Quizz.secondAnswer1();
-		String answerTwo2 = Quizz.secondAnswer2();
-		String answerTwo3 = Quizz.secondAnswer3();
-		String answerTwo4 = Quizz.secondAnswer4();
-		request.setAttribute( "sentence", teste );
-		request.setAttribute( "answer1", answerTwo1 );
-		request.setAttribute( "answer2", answerTwo2 );
-		request.setAttribute( "answer3", answerTwo3 );
-		request.setAttribute( "answer4", answerTwo4 );
+		String loose = Quizz.youLoose();
+		request.setAttribute( "sentence", loose );
 	       getServletContext().getRequestDispatcher("/WEB-INF/question.jsp")
 	        .forward(request,response);
-	       
 	}
 
 	/**
