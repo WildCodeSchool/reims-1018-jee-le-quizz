@@ -29,7 +29,7 @@ public class LooseScreen extends HttpServlet {
 		// TODO Auto-generated method stub
 		String loose = Quizz.youLoose();
 		request.setAttribute( "sentence", loose );
-	       getServletContext().getRequestDispatcher("/WEB-INF/question.jsp")
+	       getServletContext().getRequestDispatcher("/WEB-INF/GameOver.jsp")
 	        .forward(request,response);
 	}
 
