@@ -32,7 +32,6 @@ public class FourthQuestion extends HttpServlet {
 		String answerFourth2 = Quizz.fourthAnswer2();
 		String answerFourth3 = Quizz.fourthAnswer3();
 		String answerFourth4 = Quizz.fourthAnswer4();
-		//request.setAttribute( "noice", answer );
 		request.setAttribute( "sentence", teste );
 		request.setAttribute( "answer1", answerFourth1 );
 		request.setAttribute( "answer2", answerFourth2 );
