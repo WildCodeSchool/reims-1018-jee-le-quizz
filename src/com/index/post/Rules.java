@@ -1,4 +1,4 @@
-package questionPackage;
+package com.index.post;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
@@ -8,16 +8,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class ThirdQuestion
+ * Servlet implementation class Rules
  */
-@WebServlet("/Question3")
-public class ThirdQuestion extends HttpServlet {
+@WebServlet("/Rules")
+public class Rules extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public ThirdQuestion() {
+    public Rules() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -27,18 +27,8 @@ public class ThirdQuestion extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		String teste = Quizz.thirdQuestion();
-		String answerThird1 = Quizz.thirdAnswer1();
-		String answerThird2 = Quizz.thirdAnswer2();
-		String answerThird3 = Quizz.thirdAnswer3();
-		String answerThird4 = Quizz.thirdAnswer4();	
-		request.setAttribute( "sentence", teste );
-		request.setAttribute( "answer1", answerThird1 );
-		request.setAttribute( "answer2", answerThird2 );
-		request.setAttribute( "answer3", answerThird3 );
-		request.setAttribute( "answer4", answerThird4 );
-	       getServletContext().getRequestDispatcher("/WEB-INF/Question3.jsp")
-	        .forward(request,response);
+		getServletContext().getRequestDispatcher("/WEB-INF/Index/Rules.jsp")
+        .forward(request,response);
 	}
 
 	/**
