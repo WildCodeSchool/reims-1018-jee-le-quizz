@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+
+h1 {
+	color : white;
+	text_align : center;
+	text-shadow: 2px 2px grey;
+}
+
+
+h2 {
+	margin-top : 30%;
+	color : white;
+	text_align : center;
+	text-shadow: 2px 2px grey;
+}
+
+body {
+ background-image: url("http://images6.fanpop.com/image/photos/34900000/hp-harry-potter-34907672-1920-1200.jpg");
+ background-color: black;
+}
