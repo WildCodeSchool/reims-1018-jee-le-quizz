@@ -8,10 +8,10 @@ public class QuestionModel {
 	}
 
 	public Question getFirstQuestion() {
-		return new Question(1, "première question", null, null, 0);
+		return new Question(1, "première question", null, null);
 	}
 
 	public Question getQuestionByIndex(int index) {
-		return new Question(index, "question numéro " + index, null, null, 0);
+		return new Question(index, "question numéro " + index, null, null);
 	}
 }

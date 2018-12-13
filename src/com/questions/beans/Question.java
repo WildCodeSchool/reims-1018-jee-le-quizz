@@ -1,26 +1,34 @@
 package com.questions.beans;
 
+import java.util.List;
+
 public class Question {
 	private int index;
-	private String content;
 	private String title;
-	private String answers;
-	private int rightAnswer;
-	
-	public Question(int index, String content, String title, String answers, int rightAnswer) {
+	private String content;
+	private List<String> answers;
+
+	public Question(int index, String title, String content, List<String> answers) {
 		this.index = index;
-		this.content = content;
 		this.title = title;
+		this.content = content;
 		this.answers = answers;
-		this.rightAnswer = rightAnswer;
-	}
-	
+		}
+
 	public int getIndex() {
-		return this.index;
+	return this.index;
 	}
 	
 	public void setIndex(int index) {
-		this.index = index;
+	this.index = index;
+	}
+	
+	public String getTitle() {
+		return this.title;
+	}
+	
+	public void setTitle (String title) {
+		this.title = title;
 	}
 	
 	public String getContent() {
@@ -31,24 +39,13 @@ public class Question {
 		this.content = content;
 	}
 	
-	public String getTitle() {
-		return this.title;
-	}
-
-	public void setTitle (String title) {
-		this.title = title;
-	}
-
-	public String getAnswer1() {
+	public List<String> getAnswers() {
 		return this.answers;
 	}
-
-	public int getRightAnswer() {
-		return rightAnswer;
-	}
-		
-	public void setRightAnswer(int rightAnswer) {
-		this.rightAnswer = rightAnswer;
-	}
 	
+	public void setAnswers(List<String> answers) {
+		this.answers = answers;
+
+	}
+
 }
