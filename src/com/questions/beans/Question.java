@@ -1,12 +1,17 @@
 package com.questions.beans;
 
+import java.util.List;
+
 public class Question {
 	private int index;
+	private String title;
 	private String content;
+	private List<String> answers;
 	
-	public Question(int index, String content) {
+	public Question(int index, String title, String content, List<String> answers) {
 		this.index = index;
 		this.content = content;
+		this.answers = answers;
 	}
 	
 	public int getIndex() {
@@ -17,6 +22,14 @@ public class Question {
 		this.index = index;
 	}
 	
+	public String getTitle() {
+		return this.title;
+	}
+	
+	public void setTitle (String title) {
+		this.title = title;
+	}
+	
 	public String getContent() {
 		return this.content;
 	}
@@ -24,4 +37,13 @@ public class Question {
 	public void setContent(String content) {
 		this.content = content;
 	}
+	
+	public List<String> getAnswers() {
+		return this.answers;
+	}
+	
+	public void setAnswers(List<String> answers) {
+		this.answers = answers;
+	}
+	
 }
