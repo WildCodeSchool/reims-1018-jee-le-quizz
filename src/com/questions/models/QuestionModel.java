@@ -43,7 +43,6 @@ public class QuestionModel {
 			String title = (String) questionsObject.get("title");
 			String content = (String) questionsObject.get("content");
 			JSONArray jsonAnswers = (JSONArray)questionsObject.get("answers");
-			
 			List<String> answers = new ArrayList<String>();
 			for (int j = 0; j < jsonAnswers.size(); j++) {
 				String answer = (String) jsonAnswers.get(j);

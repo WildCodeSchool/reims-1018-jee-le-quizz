@@ -10,6 +10,7 @@ public class Question {
 	
 	public Question(int index, String title, String content, List<String> answers) {
 		this.index = index;
+		this.title = title;
 		this.content = content;
 		this.answers = answers;
 	}
