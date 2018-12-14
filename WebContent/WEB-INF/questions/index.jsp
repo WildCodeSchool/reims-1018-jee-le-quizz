@@ -11,12 +11,19 @@
 <link rel="stylesheet" type="text/css" href="<%= request.getContextPath() %>/QuestionIndex.css">
 </head>
 <body>
-<%= question.getContent() %>
-<%= question.getAnswers() %>
 <h1 class="text-center"> Who wants to win galleons ?</h1>
+
+<%= question.getContent() %>
+
 <form action="<%= request.getContextPath() %>/questions/check-answer" method="post">
 <input class="text-center" type="hidden" name="id" value="<%= question.getIndex() %>">
-<input type="radio" name="choice" value="<%= question.getAnswers() %>">
+<% int i = 1; %>
+<% for(String answer : question.getAnswers()) {%>
+<div>
+	<label><input type="radio" name="choice" value="<%= i %>"> <%= answer %></label>
+</div>
+<% i++; %>
+<% } %>
 <input class="text-center" type="submit" value="c'est mon dernier mot Jean-Pierre">
 </form>
 <h2 class="text-center">Find the good answer to continue the Quizz or you may go back home</h2>
