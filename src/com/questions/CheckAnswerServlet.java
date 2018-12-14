@@ -31,13 +31,23 @@ public class CheckAnswerServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		QuestionModel questionModel = new QuestionModel();
 		
+		int answer = Integer.valueOf(request.getParameter("choice"));
+		
 		int index = Integer.valueOf(request.getParameter("id"));
 		Question question = questionModel.getQuestionByIndex(index);
 		
-		boolean isOk = true;
+		boolean isOk = (answer == question.getRightAnswer());
 		
 		if(isOk) {
-			response.sendRedirect(request.getContextPath() + "/questions?id=" + (index + 1));
+			int nextIndex = index+1;
+			boolean hasNextQuestion = (nextIndex < questionModel.getQuestionCount());
+			
+			if(hasNextQuestion) {
+				response.sendRedirect(request.getContextPath() + "/questions?id=" + nextIndex);
+			}
+			else {
+				response.sendRedirect(request.getContextPath() + "/win");
+			}
 		}
 		else {
 			response.sendRedirect(request.getContextPath() + "/lose");

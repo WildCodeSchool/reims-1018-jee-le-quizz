@@ -2,8 +2,10 @@
 
 p { 
 	font-family: "Arial", cursive, sans-serif;
-	font-size : 15%;
+	font-size : 25px;
 	color: white;
+	text-shadow: 2px 2px grey;
+	text-align: center;
 	
 }
 
@@ -11,6 +13,7 @@ h1 {
 	color : white;
 	text_align : center;
 	text-shadow: 2px 2px grey;
+	margin-bottom: 10%;
 }
 
 
@@ -24,4 +27,13 @@ h2 {
 body {
  background-image: url("http://images6.fanpop.com/image/photos/34900000/hp-harry-potter-34907672-1920-1200.jpg");
  background-color: black;
+}
+
+.formulaire-questions {
+	color: white;
+	text-shadow: 2px 2px grey;
+}
+
+.last-word {
+	margin-top: 10%;
 }
