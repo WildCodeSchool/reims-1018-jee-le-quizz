@@ -11,13 +11,16 @@
 <link rel="stylesheet" type="text/css" href="<%= request.getContextPath() %>/QuestionIndex.css">
 </head>
 <body>
+<%= question.getContent() %>
+<%= question.getAnswers() %>
 <h1 class="text-center"> Who wants to win galleons ?</h1>
 <form action="<%= request.getContextPath() %>/questions/check-answer" method="post">
 <input class="text-center" type="hidden" name="id" value="<%= question.getIndex() %>">
+<input type="radio" name="choice" value="<%= question.getAnswers() %>">
 <input class="text-center" type="submit" value="c'est mon dernier mot Jean-Pierre">
 </form>
 <h2 class="text-center">Find the good answer to continue the Quizz or you may go back home</h2>
-<%= question.getContent() %>
+
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
