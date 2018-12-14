@@ -1,0 +1,36 @@
+p { 
+	font-family: "Arial", cursive, sans-serif;
+	color: white;
+	text-align: center;
+	
+}
+body {
+	 background-image: url("https://sd-cdn.fr/wp-content/uploads/2018/01/voldemort-birds-615x333.jpg");
+	 background-color: black;
+	 background-repeat: no-repeat;
+	 background-size: cover;
+}
+h1 {
+	color : black;
+	text_align : center;
+	text-shadow: 2px 2px grey;
+	text-align: center;
+	
+}
+button {
+	text-align: center;
+	margin-left: 23%;
+	width: 15%;
+	height: 130px;
+	border-color: black;
+}
+#bigRoom {
+	background-image: url("http://rosecarpet.fr/wp-content/uploads/Harrylondres.jpg");
+	background-size: cover;	
+	background-repeat: no-repeat;
+}
+#way {
+	background-image: url("https://mvistatic.com/photosmvi/2015/10/01/P1D2840458G.jpg");
+	background-size: cover;	
+	background-repeat: no-repeat;
+} 
