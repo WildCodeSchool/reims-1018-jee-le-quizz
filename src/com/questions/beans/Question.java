@@ -7,12 +7,14 @@ public class Question {
 	private String title;
 	private String content;
 	private List<String> answers;
+	private int rightAnswer;
 	
-	public Question(int index, String title, String content, List<String> answers) {
+	public Question(int index, String title, String content, List<String> answers, int rightAnswer) {
 		this.index = index;
 		this.title = title;
 		this.content = content;
 		this.answers = answers;
+		this.rightAnswer = rightAnswer;
 	}
 	
 	public int getIndex() {
@@ -47,4 +49,11 @@ public class Question {
 		this.answers = answers;
 	}
 	
+	public int getRightAnswer() {
+		return this.rightAnswer;
+	}
+	
+	public void setRightAnswer(int rightAnswer) {
+		this.rightAnswer = rightAnswer;
+	}
 }

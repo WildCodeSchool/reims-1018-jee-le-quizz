@@ -13,9 +13,9 @@
 <body>
 <h1 class="text-center"> Who wants to win galleons ?</h1>
 
-<%= question.getContent() %>
+<p><%= question.getContent() %></p>
 
-<form action="<%= request.getContextPath() %>/questions/check-answer" method="post">
+<form class="formulaire-questions text-center" action="<%= request.getContextPath() %>/questions/check-answer" method="post">
 <input class="text-center" type="hidden" name="id" value="<%= question.getIndex() %>">
 <% int i = 1; %>
 <% for(String answer : question.getAnswers()) {%>
@@ -24,7 +24,7 @@
 </div>
 <% i++; %>
 <% } %>
-<input class="text-center" type="submit" value="c'est mon dernier mot Jean-Pierre">
+<input class="text-center last-word" type="submit" value="This is my last word, Dumbledore">
 </form>
 <h2 class="text-center">Find the good answer to continue the Quizz or you may go back home</h2>
 
