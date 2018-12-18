@@ -102,6 +102,10 @@ p{
     font-weight:700;font-size:.8rem;padding-top:1.5rem;padding-bottom:1.5rem;padding-left:2rem;padding-right:2rem
 }
 
+.dobby{
+    size: 50%;
+}
+
 .intro{
     position:relative
 }
